@@ -1,0 +1,66 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 1020px;
+  margin: 0 auto 2rem;
+  gap: 1rem;
+}
+
+.header img {
+  width: 640px;
+  height: 195px;
+  margin: 0 auto;
+}
+
+.header input {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  color: black;
+}
+
+.characterList {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  margin: 1rem auto;
+  max-width: 1020px;
+}
+
+.characterList li {
+  list-style: none;
+  display: flex;
+  background-color: white;
+
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.characterList li figcaption {
+  padding: 1rem;
+}
+
+.characterList li figcaption h2 {
+  color: black;
+  font-size: 1.2rem;
+}
+.characterList li figcaption small {
+  color: #999999;
+  font-size: 0.8rem;
+}
+
+.characterList li > a {
+  display: flex;
+  max-width: 240px;
+  flex-direction: column;
+}
